@@ -1,0 +1,41 @@
+body:not(.authenticated) .app-shell,body:not(.authenticated) .bottom-nav{display:none}
+.login-page[hidden]{display:none}
+.login-page{min-height:100vh;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(400px,.95fr);background:#fff}
+.login-hero{position:relative;min-height:100vh;padding:clamp(28px,6vw,76px);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:radial-gradient(ellipse at 85% 85%,#ffb18e 0,transparent 34%),linear-gradient(145deg,#f65e38 0%,#ed492e 55%,#d93525 100%);color:#fff}
+.login-hero:after{content:"";position:absolute;width:420px;height:420px;right:-170px;top:17%;border:1px solid #ffffff3d;border-radius:50%;box-shadow:0 0 0 45px #ffffff12,0 0 0 90px #ffffff0b}
+.login-brand{position:relative;z-index:1;display:flex;align-items:center;gap:10px;width:max-content;color:white;text-decoration:none;font-size:20px;letter-spacing:-.5px}
+.login-brand img{width:38px;height:38px;padding:5px;border-radius:12px;background:#ffffff25}
+.login-brand b span{color:#ffe1b9}
+.login-hero-copy{position:relative;z-index:1;max-width:560px;margin:50px 0}
+.login-kicker{display:block;color:var(--orange);font-size:10px;font-weight:800;letter-spacing:1.6px}
+.login-hero .login-kicker{color:#ffe3cb}
+.login-hero h1{margin:18px 0;font-family:"Playfair Display",serif;font-size:clamp(42px,6vw,72px);line-height:1.05;letter-spacing:-1.5px}
+.login-hero h1 em{color:#ffe1b9}
+.login-hero-copy p{max-width:390px;color:#fff4ed;font-size:14px;line-height:1.8}
+.login-hero-note{position:relative;z-index:1;display:flex;align-items:center;gap:10px;font-size:12px;color:#fff4ed}
+.login-hero-note span:first-child{width:36px;height:36px;display:grid;place-items:center;border-radius:11px;background:#ffffff25;font-size:18px}
+.login-panel{display:grid;place-items:center;padding:36px}
+.login-card{width:min(390px,100%)}
+.login-card h2{margin:12px 0 7px;font-size:26px;letter-spacing:-.7px;color:var(--ink)}
+.login-description{margin:0 0 27px;color:var(--muted);font-size:12px;line-height:1.6}
+.login-card>label{display:block;margin:16px 0;color:#514e49;font-size:11px;font-weight:700}
+.login-card>label[hidden],.login-card [hidden]{display:none}
+.login-card input{display:block;width:100%;height:44px;margin-top:7px;padding:0 13px;border:1px solid var(--line);border-radius:8px;outline:none;font:inherit;font-weight:400;transition:border-color .15s,box-shadow .15s}
+.login-card input:focus{border-color:var(--orange);box-shadow:0 0 0 3px #f45b3520}
+.login-submit{width:100%;height:44px;margin-top:8px;text-align:left}
+.login-submit span{float:right}
+.login-switch{margin:18px 0 0;text-align:center;color:var(--muted);font-size:11px}
+.login-switch button{padding:0;border:0;background:none;color:var(--orange);font:700 11px "DM Sans",sans-serif;cursor:pointer}
+.login-switch button:hover{text-decoration:underline}
+.login-submit:disabled{opacity:.7;cursor:wait;transform:none}
+.login-demo-note{margin:17px 0 0;color:var(--muted);font-size:10px;line-height:1.6;text-align:center}
+.login-error{padding:9px 11px;border-radius:7px;background:#fff0ed;color:#b43e2d;font-size:11px}
+.sign-out-btn{width:100%;margin-top:12px;padding:10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#8b4a3b;font:700 11px "DM Sans",sans-serif;cursor:pointer}
+.sign-out-btn:hover{background:#fff7f4}
+.language-toggle{flex:0 0 auto;padding:7px 10px;border:1px solid #f2d5cb;border-radius:18px;background:#fff8f4;color:var(--orange);font:700 10px "DM Sans",sans-serif;cursor:pointer}
+.login-language{position:absolute;z-index:2;right:24px;top:24px}
+html[lang="km"] body,html[lang="km"] button,html[lang="km"] input,html[lang="km"] select,html[lang="km"] textarea{font-family:"Siemreap","Khmer OS System","Leelawadee UI",sans-serif}
+html[lang="km"] .login-hero h1{font-family:"Siemreap","Khmer OS System","Leelawadee UI",sans-serif;font-size:clamp(35px,5vw,58px);line-height:1.6;letter-spacing:0}
+html[lang="km"] .language-toggle{font-size:11px}
+@media(max-width:800px){.login-page{grid-template-columns:minmax(0,.85fr) minmax(360px,1.15fr)}.login-hero{padding:32px}.login-hero h1{font-size:48px}.login-panel{padding:26px}}
+@media(max-width:600px){.login-page{grid-template-columns:1fr;min-height:100svh}.login-hero{min-height:auto;padding:22px 24px 24px}.login-brand img{width:32px;height:32px}.login-hero-copy{margin:35px 0 24px}.login-hero h1{font-size:40px;margin:12px 0}.login-hero-copy p{font-size:12px;margin-bottom:0}.login-hero-note{display:none}.login-panel{padding:30px 24px 38px}.login-card h2{font-size:23px}}

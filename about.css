@@ -1,0 +1,9 @@
+.about-page{max-width:850px;padding:8px 0 24px;color:var(--muted);line-height:1.75}
+.about-page>p{max-width:680px}
+.about-page .about-intro{font-family:"Playfair Display",serif;font-size:clamp(24px,4vw,36px);font-weight:700;line-height:1.2;color:var(--ink);margin:8px 0 14px}
+.about-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px}
+.about-highlights article{padding:18px;border:1px solid var(--line);border-radius:14px;background:#fffdfa}
+.about-highlights article>span{font-size:24px}
+.about-highlights h3{font-size:13px;color:var(--ink);margin:12px 0 6px}
+.about-highlights p{font-size:11px;margin:0}
+@media(max-width:700px){.about-highlights{grid-template-columns:1fr}}

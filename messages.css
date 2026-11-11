@@ -1,0 +1,20 @@
+.message-page{max-width:760px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.message-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px}
+.message-top strong,.message-top small{display:block}
+.message-top strong{font-size:13px;color:var(--ink)}
+.message-top small{font-size:10px;color:var(--muted);margin-top:4px}
+.message-top label{display:flex;align-items:center;gap:8px;font-size:10px;color:var(--muted)}
+.message-top select{max-width:210px;padding:8px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink)}
+.message-notice{padding:10px 20px;background:#fff8f4;color:#8a573e;font-size:10px}
+.message-thread{min-height:220px;max-height:430px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:18px 20px}
+.message-row{align-self:flex-end;max-width:min(80%,460px);display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.message-bubble{margin:0;padding:10px 13px;border-radius:13px 13px 3px 13px;background:#fff0e8;color:var(--ink);font-size:12px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+.message-row time{font-size:9px;color:var(--muted)}
+.message-placeholder{margin:auto;color:var(--muted);font-size:11px;text-align:center;max-width:340px}
+.message-compose{border-top:1px solid var(--line);padding:14px 20px;display:flex;align-items:flex-end;gap:10px}
+.message-compose textarea{flex:1;min-height:42px;max-height:120px;resize:vertical;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:11px}
+.message-compose .orange-btn{white-space:nowrap}
+.message-empty{padding:28px 16px;text-align:center}
+.message-empty .empty{margin:0 0 14px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:500px){.message-top{align-items:flex-start;flex-direction:column}.message-top label{width:100%;justify-content:space-between}.message-top select{max-width:none;flex:1}.message-compose{align-items:stretch;flex-direction:column}.message-compose .orange-btn{width:100%}.message-thread{min-height:180px;padding:14px}}

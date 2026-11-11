@@ -1,0 +1,18 @@
+.distance-control,.sort-control{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:10px;white-space:nowrap}
+.distance-control select,.sort-control select{border:1px solid var(--line);border-radius:7px;padding:7px 9px;color:var(--ink);font:inherit;background:#fff;cursor:pointer}
+.filter-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 16px}
+.filter-toolbar[hidden]{display:none}
+.category-filters{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.category-chip{border:1px solid var(--line);border-radius:18px;background:#fff;padding:7px 12px;color:#77736e;font:600 10px "DM Sans",sans-serif;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.category-chip:hover,.category-chip.active{border-color:var(--orange);background:#fff4ef;color:var(--orange)}
+.category-chip:focus-visible,.distance-control select:focus-visible,.sort-control select:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.favorites-categories{margin-bottom:16px}
+.food-grid{align-items:stretch}
+.food-card{display:flex;height:100%;flex-direction:column}
+.food-photo{flex:0 0 auto}
+.food-info{display:flex;flex:1;flex-direction:column}
+.food-info h3{display:-webkit-box;min-height:0;margin:0 0 3px;overflow:hidden;line-height:1.45;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.food-info p{min-height:0;line-height:1.5}
+.food-bottom{margin-top:auto;padding-top:7px}
+html[lang="km"] .restaurant-card,html[lang="km"] .restaurant-card *,html[lang="km"] .food-card,html[lang="km"] .food-card *,html[lang="km"] .order-card,html[lang="km"] .order-card *{font-family:"Siemreap","Khmer OS System","Leelawadee UI",sans-serif}
+@media(max-width:700px){.filter-toolbar{align-items:flex-start;flex-direction:column}.category-filters{width:100%}.distance-control{font-size:9px}}
